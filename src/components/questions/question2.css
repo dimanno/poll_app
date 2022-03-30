@@ -1,0 +1,92 @@
+ .wrap-queation1 {    
+   text-align: center;
+}
+
+
+.center-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  color: #010166;
+  text-align: center;
+  position: relative;
+  border-radius: .25rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+  background-color: hsl(57, 100%, 87%);
+  transform-style: preserve-3d;
+  transition: 200ms;
+  cursor: pointer;
+  height: 400px;
+  width: 400px;
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+}
+
+.card.flip {
+  --rotate-y: 180deg;
+}
+
+.card.wrong {
+  --rotate-y: 180deg;
+}
+
+
+.card .front,
+.card .back,
+.card .incorrect {                                   
+  position: absolute;
+  padding: 1rem;    
+  backface-visibility: hidden;
+}
+
+.card .back,
+.card .incorrect {
+  transform: rotateY(180deg);
+}
+
+.incorrect{
+  border: 2px solid red;
+}
+
+button {
+  border: #010166 solid 2px;
+    border-radius: 30px;
+    background-color: yellow;
+    padding: 7px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);;
+    margin-right: 40px;
+    margin-left: 40px;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+button:hover {
+  --translate-y: -2px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+  border: none;
+}
+
+button a {
+  font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #010166;
+}
+
+h3 {
+  color: red;
+  font-weight: bold;
+}

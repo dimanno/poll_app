@@ -1,0 +1,31 @@
+.wrap-home {
+    color: #010166;
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.start {
+    border: #010166 solid 2px;
+    border-radius: 30px;
+    background-color: yellow;
+    padding: 7px;
+    width: 70px;
+    height: 20px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);;
+}
+
+.start:hover {
+    --translate-y: -2px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+    border: none;
+}
+.start a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #010166;
+}
