@@ -96,15 +96,10 @@ export function Question1() {
       </div>
 
       <div className="button-block center-position">
-        {
-            
-            next ?  <NextQuestion/> : ''
-                    
+        {  
+            next ?  <NextQuestion/> : ''            
         }
           
-        {/* <button disabled className="next"  >
-        <Link to={'/question_2' }>Next question</Link>
-        </button> */}
         
         
       </div>
